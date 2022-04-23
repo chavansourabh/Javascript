@@ -22,3 +22,17 @@ b -= 15;
 c -= 11;
 
 console.log(a, b, c);
+
+//similarly for multiplication
+
+
+a *= 2;
+b *= 6;
+c *= 8;
+
+//similarly for division
+
+
+a /= 7;
+b /= 5;
+c /= 9;
