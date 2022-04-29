@@ -13,3 +13,4 @@ function passingMarks(num) {
 }
 
 console.log(passingMarks(-100));
+
