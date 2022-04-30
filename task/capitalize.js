@@ -25,14 +25,14 @@ function convert(str, pos) {
         var result = arr.join("");
         return result;
     }
-    else {
-        return "character not found";
-    }
+
+    return "character not found";
+
 
 }
 
-console.log(convert("abc", 2));
-console.log(convert("android", 3));
+// console.log(convert("abc", -1));
+console.log(convert(null, 3));
 
 
 
