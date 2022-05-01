@@ -1,4 +1,4 @@
-function convert(str, pos) {
+function convert(str = "", pos) {
     // input = abc , outout = aBc
     // input = android , output = anDroid
 
@@ -14,7 +14,7 @@ function convert(str, pos) {
     */
 
 
-    if (pos <= str.length) {
+    if (pos <= str.length && pos > 0 && arr != undefined && arr != "") {
         var arr = str.split("");
 
         var newWord;
@@ -26,7 +26,7 @@ function convert(str, pos) {
         return result;
     }
 
-    return "character not found";
+    return "Invalid input";
 
 
 }
