@@ -1,4 +1,4 @@
-function convert(str = "", pos) {
+function convert(str, pos) {
     // input = abc , outout = aBc
     // input = android , output = anDroid
 
@@ -13,8 +13,13 @@ function convert(str = "", pos) {
     step 6 print output
     */
 
+    var checkNull = str;
+    if (checkNull == null) {
+        return "Please enter valid string";
+    }
 
-    if (pos <= str.length && pos > 0 && arr != undefined && arr != "") {
+
+    else if (pos <= str.length && pos > 0) {
         var arr = str.split("");
 
         var newWord;
@@ -32,7 +37,7 @@ function convert(str = "", pos) {
 }
 
 // console.log(convert("abc", -1));
-console.log(convert(null, 3));
+console.log(convert('abc', 1));
 
 
 
