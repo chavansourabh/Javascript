@@ -4,12 +4,21 @@ function checkIpValidity(ip) {
 
     var blocks = ip.split(".");
     if (blocks.length === 4) {
-        return blocks.every(function (block) {
-            const value = parseInt(block, 10);
+
+        return blocks.every(function (element) {
+
+            const value = parseInt(element, 10);
+
             if (value >= 0 && value <= 255) {
-                var i = block.length;
+
+                var i = element.length;
+
                 while (i--) {
-                    if (block[i] < '0' || block[i] > '9') { return "invalid input"; }
+
+                    if (element[i] < '0' || element[i] > '9') {
+                        return "invalid input";
+                    }
+
                 } return true;
             }
         });
@@ -18,4 +27,4 @@ function checkIpValidity(ip) {
 
 }
 
-console.log(checkIpValidity(""));
+console.log(checkIpValidity("110.25.111."));
