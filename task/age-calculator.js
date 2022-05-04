@@ -9,18 +9,21 @@ function calcAge(dob) {
 
 console.log(calcAge(new Date("1998-03-15")));
 
-// function getAge(dateString) {
+/****************************************************** */
 
+function getAge(dateString) {
 
-//     dateString.match()
-//     var today = new Date();
-//     var birthDate = new Date(dateString);
-//     var age = today.getFullYear() - birthDate.getFullYear();
-//     var m = today.getMonth() - birthDate.getMonth();
+    var arr = dateString.split("-");
+    return arr;
+    // dateString.match()
+    // var today = new Date();
+    // var birthDate = new Date(dateString);
+    // var age = today.getFullYear() - birthDate.getFullYear();
+    // var m = today.getMonth() - birthDate.getMonth();
 
-//     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-//         age--;
-//     }
-//     return age;
-// }
-// console.log(getAge("1998-03-15"));
+    // if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    //     age--;
+    // }
+    // return age;
+}
+console.log(getAge(("1998-03-15")));
